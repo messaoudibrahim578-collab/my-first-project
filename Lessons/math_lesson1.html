@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس الأعداد الأولية</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f8ff; color: #333; line-height: 1.8; padding: 20px; max-width: 800px; margin: auto; }
+        .lesson-container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #e74c3c; margin-top: 30px; }
+        h3 { color: #2980b9; }
+        .highlight { background-color: #f9f2f4; color: #c7254e; padding: 2px 5px; border-radius: 3px; font-weight: bold; }
+        .math-box { background-color: #e8f6f3; padding: 15px; border-right: 4px solid #1abc9c; margin: 15px 0; font-size: 1.1em; direction: ltr; text-align: right; }
+        .vocab { display: inline-block; background: #34495e; color: white; padding: 5px 10px; border-radius: 5px; margin: 5px; font-size: 0.9em; }
+        .back-btn { display: block; text-align: center; margin-top: 30px; color: #3498db; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>📐 الأعداد الأولية والتحليل إلى جداء عوامل أولية</h1>
+        
+        <h2>1️⃣ الهدف الأساسي</h2>
+        <p>تمكين الطالبة من تفكيك أي عدد طبيعي مركّب إلى جداء عوامل أولية، واستغلال هذا التحليل في إيجاد القاسم المشترك الأكبر (PGCD) والمضاعف المشترك الأصغر (PPCM)، واختزال الكسور، وتحويل الأعداد إلى مربعات أو مكعبات تامة.</p>
+
+        <h2>2️⃣ شرح مبسط للقوانين والنظريات</h2>
+        <h3>أ. مفهوم العدد الأولي والعدد المركب:</h3>
+        <ul>
+            <li><strong>العدد الأولي:</strong> هو كل عدد طبيعي أكبر من 1 يقبل بالضبط قاسمين موجَبين مختلفين هما: 1 والعدد نفسه (مثل: 2, 3, 5, 7, 11, 13...).</li>
+            <li><span class="highlight">تنبيه هام:</span> العدد 1 ليس أولياً لأنه يقبل قاسماً واحداً فقط، والعدد 0 ليس أولياً لأنه يقبل عدداً غير منتهٍ من القواسم.</li>
+            <li><strong>مبرهنة التحليل:</strong> كل عدد طبيعي غير أولي أكبر من 2 يُكتب بشكل وحيد على شكل جداء أعداد أولية.</li>
+        </ul>
+
+        <h3>ب. القاسم المشترك الأكبر والمضاعف المشترك الأصغر:</h3>
+        <ul>
+            <li><strong>PGCD:</strong> نأخذ العوامل الأولية المشتركة فقط مأخوذة مرة واحدة بـ <span class="highlight">أصغر أُس</span> (يُستعمل لاختزال الكسور).</li>
+            <li><strong>PPCM:</strong> نأخذ العوامل الأولية المشتركة وغير المشتركة مأخوذة مرة واحدة بـ <span class="highlight">أكبر أُس</span> (يُستعمل لتوحيد المقامات).</li>
+            <li><strong>العلاقة الذهبية:</strong> a &times; b = PGCD(a, b) &times; PPCM(a, b)</li>
+        </ul>
+
+        <h2>3️⃣ المصطلحات العلمية الهامة</h2>
+        <div>
+            <span class="vocab">Nombre premier (العدد الأولي)</span>
+            <span class="vocab">Décomposition en facteurs premiers (التحليل لعوامل)</span>
+            <span class="vocab">PGCD</span>
+            <span class="vocab">PPCM</span>
+            <span class="vocab">Carré parfait (مربع تام)</span>
+            <span class="vocab">Fraction irréductible (كسر غير قابل للاختزال)</span>
+        </div>
+
+        <h2>4️⃣ مثال تطبيقي محلول</h2>
+        <p><strong>المسألة:</strong> ليكن العددان A = 180 و B = 120. حلل العددين واستخرج الـ PGCD.</p>
+        
+        <div class="math-box">
+            <strong>:تحليل العدد 180</strong><br>
+            180 &div; 2 = 90<br>
+            90 &div; 2 = 45<br>
+            45 &div; 3 = 15<br>
+            15 &div; 3 = 5<br>
+            5 &div; 5 = 1<br>
+            <span style="color:#e74c3c;">180 = 2<sup>2</sup> &times; 3<sup>2</sup> &times; 5<sup>1</sup></span>
+        </div>
+
+        <div class="math-box">
+            <strong>:تحليل العدد 120</strong><br>
+            120 = 2<sup>3</sup> &times; 3<sup>1</sup> &times; 5<sup>1</sup>
+        </div>
+
+        <div class="math-box">
+            <strong>:حساب القاسم المشترك الأكبر</strong><br>
+            العوامل المشتركة بأصغر أُس هي 2<sup>2</sup> و 3<sup>1</sup> و 5<sup>1</sup><br>
+            <span style="color:#e74c3c;">PGCD(180, 120) = 2<sup>2</sup> &times; 3<sup>1</sup> &times; 5<sup>1</sup> = 4 &times; 3 &times; 5 = 60</span>
+        </div>
+
+        <a href="../Web-App/lessons.html" class="back-btn">⬅ العودة لقائمة المواد</a>
+    </div>
+</body>
+</html>
